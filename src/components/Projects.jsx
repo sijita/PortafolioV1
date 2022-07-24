@@ -1,12 +1,10 @@
 import { useGlobalContext } from "../hooks/useGlobalContext";
 import { motion } from "framer-motion";
 import screen from "../images/screen.jpg";
-import screen2 from "../images/screen2.jpg";
 import screen3 from "../images/screen3.jpg";
 import screen4 from "../images/screen4.jpg";
 import screen5 from "../images/screen5.jpg";
 import screen6 from "../images/screen6.jpeg";
-import fullScreen from "../images/fullScreen2.png";
 import fullScreen2 from "../images/fullScreen4.png";
 import fullScreen3 from "../images/fullscreen3.png";
 import ProjectCard from "./ProjectCard";
@@ -67,14 +65,6 @@ export default function Projects() {
             title={translated ? "Agrosoft" : "Agrosoft"}
             screen={screen6}
           />
-        </motion.a>
-        <motion.a
-          variants={item}
-          href={fullScreen}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <ProjectCard title="Ecommerce" screen={screen2} />
         </motion.a>
         <motion.a
           variants={item}

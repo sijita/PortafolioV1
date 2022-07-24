@@ -6,6 +6,8 @@ import {
   DiReact,
   DiBootstrap,
 } from "react-icons/di";
+import { FiFigma } from "react-icons/fi";
+import { AiFillGithub } from "react-icons/ai";
 import ListItem from "./ListItem";
 import { motion } from "framer-motion";
 
@@ -27,7 +29,7 @@ export default function Skills() {
     show: { opacity: 1, scale: 1 },
   };
   return (
-    <div className="container lg:p-20 p-10 mx-auto w-11/12 text-center">
+    <div className="container w-11/12 p-10 mx-auto text-center lg:p-20">
       <motion.h2
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -45,7 +47,7 @@ export default function Skills() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid grid-cols-1 sm:grid-cols-2 my-14 gap-5"
+        className="grid grid-cols-1 gap-5 sm:grid-cols-2 my-14"
       >
         <ListItem
           item={item}
@@ -86,6 +88,16 @@ export default function Skills() {
           item={item}
           name="Photoshop"
           icon={<SiAdobephotoshop className="fill-[#8cf72b] text-lg" />}
+        />
+        <ListItem
+          item={item}
+          name="Figma"
+          icon={<FiFigma className="stroke-[#8cf72b] text-xl" />}
+        />
+        <ListItem
+          item={item}
+          name="Github"
+          icon={<AiFillGithub className="fill-[#8cf72b] text-2xl" />}
         />
       </motion.ul>
     </div>
