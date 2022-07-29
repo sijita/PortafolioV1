@@ -63,8 +63,8 @@ export default function Experience() {
               <motion.li variants={item} className="flex items-center gap-5">
                 <BiChevronRight className="text-3xl min-w-max fill-[#8cf72b]" />
                 {translated
-                  ? "Agrosoft (In construction)"
-                  : "Agrosoft (En construcción)"}
+                  ? "Agrosoft"
+                  : "Agrosoft"}
               </motion.li>
               <motion.li variants={item} className="flex items-center gap-5">
                 <BiChevronRight className="text-3xl min-w-max fill-[#8cf72b]" />

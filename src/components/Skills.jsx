@@ -8,6 +8,7 @@ import {
 } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
+import { CgFramer } from "react-icons/cg";
 import ListItem from "./ListItem";
 import { motion } from "framer-motion";
 
@@ -97,7 +98,12 @@ export default function Skills() {
         <ListItem
           item={item}
           name="Github"
-          icon={<AiFillGithub className="fill-[#8cf72b] text-2xl" />}
+          icon={<AiFillGithub className="fill-[#8cf72b] text-xl" />}
+        />
+        <ListItem
+          item={item}
+          name="Framer Motion"
+          icon={<CgFramer className="text-[#8cf72b] text-2xl" />}
         />
       </motion.ul>
     </div>
