@@ -40,13 +40,6 @@ export default function ExpList({ engTitle, espTitle, year, works }) {
         }}
         className="text-xl text-center"
       >
-        <span className="text-white">Freelancer</span>{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
-          /
-        </span>
-        <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
-          /
-        </span>{" "}
         {year}
       </motion.h3>
       <motion.ul

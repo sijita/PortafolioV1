@@ -5,7 +5,7 @@ export default function DescriptionENG() {
       <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
         Simón Jiménez Tamayo
       </span>
-      , I'm 20 years old and I'm a 8th semester student of Software Engineering
+      , I'm 21 years old and I'm a 9th semester student of Software Engineering
       at the Surcolombiana University, located in Neiva - Huila&nbsp;
       <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
         (

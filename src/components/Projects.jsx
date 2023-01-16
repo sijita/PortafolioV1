@@ -1,16 +1,12 @@
 import { useGlobalContext } from "../hooks/useGlobalContext";
 import { motion } from "framer-motion";
-import screen from "../images/screen.jpg";
-import screen3 from "../images/screen3.jpg";
-import screen4 from "../images/screen4.jpg";
-import screen5 from "../images/screen5.jpg";
-import screen6 from "../images/screen6.jpeg";
-import fullScreen2 from "../images/fullScreen4.png";
-import fullScreen3 from "../images/fullscreen3.png";
 import ProjectCard from "./ProjectCard";
+import ProjectsList from "../hooks/ProjectsList";
 
 export default function Projects() {
   const { translated } = useGlobalContext();
+  const { webProjects } = ProjectsList();
+
   const container = {
     hidden: { opacity: 0, scale: 0 },
     show: {
@@ -27,6 +23,7 @@ export default function Projects() {
     hidden: { opacity: 0, scale: 0 },
     show: { opacity: 1, scale: 1 },
   };
+
   return (
     <div className="container w-11/12 p-10 mx-auto lg:p-20">
       <motion.h1
@@ -44,63 +41,13 @@ export default function Projects() {
         animate="show"
         className="grid grid-cols-1 gap-20 md:grid-cols-2 mt-14 justify-items-center"
       >
-        <motion.a
-          variants={item}
-          href="https://hotelambeyma.com/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <ProjectCard
-            title={translated ? "Ambeyma hotel" : "Hotel Ambeyma"}
-            screen={screen}
-          />
-        </motion.a>
-        <motion.a
-          variants={item}
-          href="https://agrosoft.vercel.app/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <ProjectCard
-            title={translated ? "Agrosoft" : "Agrosoft"}
-            screen={screen6}
-          />
-        </motion.a>
-        <motion.a
-          variants={item}
-          href={fullScreen3}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <ProjectCard title="Ecommerce" screen={screen3} />
-        </motion.a>
-        <motion.a
-          variants={item}
-          href={fullScreen2}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <ProjectCard
-            title={translated ? "School page" : "Página escolar"}
-            screen={screen4}
-          />
-        </motion.a>
-        <motion.a
-          variants={item}
-          href="https://github.com/sijita/RickAndMortyAPI_RNative"
-          rel="noreferrer"
-          target="_blank"
-          className="w-5/12"
-        >
-          <ProjectCard
-            title={
-              translated
-                ? "Rick and Morty mobile app"
-                : "Aplicación movil de Rick and Morty"
-            }
-            screen={screen5}
-          />
-        </motion.a>
+        {webProjects.map((project, index) => {
+          return (
+            <motion.div variants={item} key={index}>
+              <ProjectCard {...project} />
+            </motion.div>
+          );
+        })}
       </motion.div>
     </div>
   );
