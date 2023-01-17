@@ -27,7 +27,7 @@ export default function Experience() {
               <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
                 (
               </span>
-              Agosto 2022 - Enero 2023
+              Septiembre 2022 - Enero 2023
               <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
                 )
               </span>
