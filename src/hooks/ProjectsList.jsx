@@ -4,6 +4,7 @@ import screen4 from "../images/screen4.jpg";
 import screen5 from "../images/screen5.jpg";
 import screen6 from "../images/screen6.jpg";
 import screen7 from "../images/screen7.jpg";
+import screen8 from "../images/screen8.jpg";
 import fullScreen2 from "../images/fullScreen4.png";
 import fullScreen3 from "../images/fullscreen3.png";
 import { useGlobalContext } from "./useGlobalContext";
@@ -11,6 +12,11 @@ import { useGlobalContext } from "./useGlobalContext";
 export default function ProjectsList() {
   const { translated } = useGlobalContext();
   const webProjects = [
+    {
+      title: "Notys",
+      screen: screen8,
+      href: "https://notys.vercel.app/",
+    },
     {
       title: translated ? "Ambeyma hotel" : "Hotel Ambeyma",
       screen: screen,
