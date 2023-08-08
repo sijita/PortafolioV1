@@ -9,6 +9,7 @@ import {
 import { FiFigma } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { CgFramer } from "react-icons/cg";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const skillsList = [
   {
@@ -42,6 +43,10 @@ export const skillsList = [
   {
     name: "React Native",
     icon: <DiReact className="fill-[#8cf72b] text-2xl" />,
+  },
+  {
+    name: "NextJS",
+    icon: <TbBrandNextjs className="stroke-[#8cf72b] text-2xl" />,
   },
   {
     name: "Photoshop",
