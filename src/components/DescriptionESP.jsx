@@ -7,8 +7,9 @@ export default function DescriptionESP() {
       <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
         Simón Jiménez Tamayo
       </span>
-      , tengo 21 años y soy estudiante de 9no semestre de Ingeniería de Software
-      en la Universidad Surcolombiana, ubicada en Neiva - Huila&nbsp;
+      , tengo 21 años y estoy en espera de mi graduación (Septiembre) como
+      Ingeniero de Software en la Universidad Surcolombiana, ubicada en Neiva -
+      Huila&nbsp;
       <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#BAFF29] to-[#3fea2f]">
         (
       </span>
