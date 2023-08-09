@@ -10,31 +10,32 @@ export default function SwitchToggle() {
       checked={translated}
       onColor="#40ea2f"
       className="react-switch"
-      handleDiameter={30}
+      handleDiameter={0}
       offColor="#f6fafd"
       offHandleColor="#40ea2f"
       height={40}
       width={85}
       checkedHandleIcon={
-        <div className="flex justify-center items-center h-full text-black">
+        <div className="flex justify-center items-center h-full text-black rounded-none">
           <BsTranslate />
         </div>
       }
       uncheckedHandleIcon={
-        <div className="flex justify-center items-center h-full text-white">
+        <div className="flex justify-center items-center h-full text-white rounded-none">
           <BsTranslate />
         </div>
       }
       uncheckedIcon={
-        <div className="flex justify-center items-center h-full text-black font-bold">
+        <div className="flex justify-center items-center h-full text-black font-bold rounded-none">
           ES
         </div>
       }
       checkedIcon={
-        <div className="flex justify-center items-center h-full text-black font-bold">
+        <div className="flex justify-center items-center h-full text-black font-bold rounded-none">
           EN
         </div>
       }
+      borderRadius={0}
     />
   );
 }
