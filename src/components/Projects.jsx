@@ -7,19 +7,6 @@ export default function Projects() {
   const { translated } = useGlobalContext();
   const { webProjects } = ProjectsList();
 
-  // const container = {
-  //   hidden: { opacity: 0, y: -250 },
-  //   show: {
-  //     opacity: 1,
-  //     y: 0,
-  //   },
-  // };
-
-  const item = {
-    hidden: { opacity: 0, scale: 0 },
-    show: { opacity: 1, scale: 1 },
-  };
-
   return (
     <div className="container w-11/12 p-10 mx-auto lg:p-20">
       <motion.h1
