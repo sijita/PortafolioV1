@@ -12,8 +12,8 @@ export default function Services() {
       opacity: 1,
       y: 0,
       transition: {
-        staggerChildren: 0.6,
-        delayChildren: 0.5,
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
       },
     },
   };
@@ -29,7 +29,7 @@ export default function Services() {
         initial={{ opacity: 0, x: -150 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
         className="inline-block text-white text-4xl font-semibold"
       >
         {translated ? "Services" : "Servicios"}

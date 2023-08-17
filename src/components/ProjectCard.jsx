@@ -1,8 +1,16 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 export default function ProjectCard({ screen, title, href }) {
   return (
-    <a href={href} target="_blank" rel="noreferrer">
+    <motion.a
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
       <img
         src={screen}
         className="p-2 m-0 sm:w-[580px] xl:h-[360px]"
@@ -14,6 +22,6 @@ export default function ProjectCard({ screen, title, href }) {
         alt="Proyecto personal"
       />
       <p className="text-center text-2xl mt-5 text-white">{title}</p>
-    </a>
+    </motion.a>
   );
 }

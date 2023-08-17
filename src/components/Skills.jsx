@@ -1,5 +1,5 @@
 import ListItem from "./ListItem";
-import { skillsList } from "../constants/skills"
+import { skillsList } from "../constants/skills";
 import { motion } from "framer-motion";
 
 export default function Skills() {
@@ -9,8 +9,8 @@ export default function Skills() {
       opacity: 1,
       scale: 1,
       transition: {
-        staggerChildren: 0.4,
-        delayChildren: 0.5,
+        staggerChildren: 0.2,
+        delayChildren: 0.2,
       },
     },
   };
@@ -27,7 +27,7 @@ export default function Skills() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{
-          duration: 1,
+          duration: 0.5,
           ease: "easeInOut",
         }}
         className="text-4xl font-semibold text-white"

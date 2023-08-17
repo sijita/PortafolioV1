@@ -12,7 +12,7 @@ export default function AboutMe() {
         initial={{ opacity: 0, x: -150 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
         className="inline-block text-white align-middle text-4xl font-semibold"
       >
         {translated ? "About me" : "Sobre mi"}
@@ -24,7 +24,7 @@ export default function AboutMe() {
         transition={{ duration: 1 }}
         className="flex flex-col lg:flex-row justify-center items-center lg:items-start my-14 gap-20"
       >
-        <div className="text-xl flex-1 text-gray-400 text-justify">
+        <div className="text-xl flex-1 text-gray-400">
           <div>{translated ? <DescriptionENG /> : <DescriptionESP />}</div>
         </div>
         <div className="flex-1">

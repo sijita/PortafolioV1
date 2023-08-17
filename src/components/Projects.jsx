@@ -7,17 +7,13 @@ export default function Projects() {
   const { translated } = useGlobalContext();
   const { webProjects } = ProjectsList();
 
-  const container = {
-    hidden: { opacity: 0, scale: 0 },
-    show: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        staggerChildren: 0.8,
-        delayChildren: 0.5,
-      },
-    },
-  };
+  // const container = {
+  //   hidden: { opacity: 0, y: -250 },
+  //   show: {
+  //     opacity: 1,
+  //     y: 0,
+  //   },
+  // };
 
   const item = {
     hidden: { opacity: 0, scale: 0 },
@@ -30,25 +26,20 @@ export default function Projects() {
         initial={{ opacity: 0, x: -150 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
         className="inline-block text-4xl font-semibold text-white"
       >
         {translated ? "Projects" : "Proyectos"}
       </motion.h1>
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="grid grid-cols-1 gap-20 md:grid-cols-2 mt-14 justify-items-center"
-      >
+      <div className="grid grid-cols-1 gap-20 md:grid-cols-2 mt-14 justify-items-center">
         {webProjects.map((project, index) => {
           return (
-            <motion.div variants={item} key={index}>
+            <div key={index}>
               <ProjectCard {...project} />
-            </motion.div>
+            </div>
           );
         })}
-      </motion.div>
+      </div>
     </div>
   );
 }

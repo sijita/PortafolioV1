@@ -9,8 +9,8 @@ export default function ExpList({ engTitle, espTitle, year, works }) {
       opacity: 1,
       x: 0,
       transition: {
-        staggerChildren: 1,
-        delayChildren: 1.5,
+        staggerChildren: 0.5,
+        delayChildren: 1,
       },
     },
   };

@@ -12,7 +12,7 @@ export default function Experience() {
         initial={{ opacity: 0, x: -150 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
         className="inline-block text-4xl font-semibold text-white"
       >
         {translated ? "Experience" : "Experiencia"}
