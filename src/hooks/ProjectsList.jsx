@@ -5,12 +5,18 @@ import screen6 from "../images/screen6.jpg";
 import screen7 from "../images/screen7.jpg";
 import screen8 from "../images/screen8.jpg";
 import screen9 from "../images/screen9.jpg";
+import screen10 from "../images/screen10.jpg";
 import fullScreen2 from "../images/fullScreen4.png";
 import { useGlobalContext } from "./useGlobalContext";
 
 export default function ProjectsList() {
   const { translated } = useGlobalContext();
   const webProjects = [
+    {
+      title: translated ? "Football Quiz" : "Fútbol Quiz",
+      screen: screen10,
+      href: "https://football-quiz-three.vercel.app/",
+    },
     {
       title: "eCommerce",
       screen: screen9,
